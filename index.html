@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La anatomía de una cancelación hotelera</title>
+  <meta name="description" content="Storytelling visual sobre señales de fragilidad en reservas hoteleras: dos hoteles portugueses, 2015-2017.">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#step-1">Saltar a la historia</a>
+
+  <nav class="progress" aria-label="Progreso de la historia">
+    <button class="progress__dot" data-scene="1" title="Escena 1" aria-label="Ir a escena 1"></button>
+    <button class="progress__dot" data-scene="2" title="Escena 2" aria-label="Ir a escena 2"></button>
+    <button class="progress__dot" data-scene="3" title="Escena 3" aria-label="Ir a escena 3"></button>
+    <button class="progress__dot" data-scene="4" title="Escena 4" aria-label="Ir a escena 4"></button>
+    <button class="progress__dot" data-scene="5" title="Escena 5" aria-label="Ir a escena 5"></button>
+    <button class="progress__dot" data-scene="6" title="Escena 6" aria-label="Ir a escena 6"></button>
+  </nav>
+
+  <header class="cover" id="cover">
+    <div class="cover__inner">
+      <p class="eyebrow">Análisis visual · reservas hoteleras</p>
+      <h1 class="cover__title">La anatomía de una<br>cancelación hotelera</h1>
+      <p class="cover__subtitle">Señales visuales para detectar reservas frágiles</p>
+
+      <p class="cover__context">
+        Este recorrido parte de <strong>119.390 reservas reales</strong> registradas en dos hoteles
+        portugueses entre 2015 y 2017: un hotel urbano en Lisboa y un resort en el Algarve.
+        A través de cinco capas visuales, buscamos qué distingue a las reservas que llegan a
+        estancia de las que acaban cancelándose.
+      </p>
+
+      <div class="cover__stats" aria-label="Resumen del conjunto de datos">
+        <div class="stat-card">
+          <span class="stat-card__value">119.390</span>
+          <span class="stat-card__label">reservas originales</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__value">117.398</span>
+          <span class="stat-card__label">reservas analizadas</span>
+        </div>
+        <div class="stat-card stat-card--alert">
+          <span class="stat-card__value">37,5 %</span>
+          <span class="stat-card__label">canceladas</span>
+        </div>
+      </div>
+
+      <p class="cover__note">
+        Los gráficos utilizan una versión depurada del dataset, tras eliminar valores extremos,
+        estancias de 0 noches, reservas sin huéspedes y registros no adecuados para el análisis visual.
+      </p>
+
+      <a href="#step-1" id="btn-start" class="cover__btn">Comenzar la historia</a>
+      <p class="scroll-cue" aria-hidden="true">Desplázate para avanzar ↓</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="scrolly" aria-label="Narrativa visual por escenas">
+      <div class="scrolly__steps">
+        <article class="step" data-scene="1" id="step-1">
+          <div class="step__content">
+            <span class="step__number">Escena 1 / 6</span>
+            <h2 class="step__question">¿Cuánto pesa realmente la cancelación en la demanda hotelera?</h2>
+            <p class="step__message">
+              En el conjunto depurado, el <strong>37,5 %</strong> de las reservas fueron canceladas:
+              más de una de cada tres reservas no terminó convirtiéndose en una estancia.
+            </p>
+            <p class="step__support">
+              La cancelación no es un detalle menor. Afecta a la ocupación prevista, a la
+              planificación de recursos y a la estrategia comercial. Antes de buscar causas,
+              hay que dimensionar el problema.
+            </p>
+            <p class="step__takeaway">Primer hallazgo: la cancelación es un fenómeno central, no marginal.</p>
+          </div>
+        </article>
+
+        <article class="step" data-scene="2" id="step-2">
+          <div class="step__content">
+            <span class="step__number">Escena 2 / 6</span>
+            <h2 class="step__question">¿Se cancela igual en un hotel urbano que en un resort?</h2>
+            <p class="step__message">
+              No. El <strong>City Hotel</strong> presenta una tasa de cancelación del
+              <strong>42,2 %</strong>, frente al <strong>28,1 %</strong> del Resort Hotel.
+            </p>
+            <p class="step__support">
+              La diferencia sugiere que el contexto importa. Un hotel urbano puede estar más
+              expuesto a viajes flexibles, cambios de agenda o canales de intermediación distintos
+              a los de un resort vacacional.
+            </p>
+            <p class="step__takeaway">Primera capa: el tipo de hotel cambia la fragilidad de la reserva.</p>
+          </div>
+        </article>
+
+        <article class="step" data-scene="3" id="step-3">
+          <div class="step__content">
+            <span class="step__number">Escena 3 / 6</span>
+            <h2 class="step__question">¿Por dónde llegan las reservas más inestables?</h2>
+            <p class="step__message">
+              Las reservas procedentes de <strong>TA/TO</strong> —agencias de viaje y operadores
+              turísticos— tienen una tasa de cancelación del <strong>41,4 %</strong>, muy por encima
+              del canal Direct, con un <strong>17,8 %</strong>.
+            </p>
+            <p class="step__support">
+              Algunos canales generan mucho volumen, pero también más incertidumbre. Por eso,
+              no basta con medir cuántas reservas entran: también importa por dónde llegan.
+            </p>
+            <p class="step__takeaway">Segunda capa: el canal comercial revela estabilidad o incertidumbre.</p>
+          </div>
+        </article>
+
+        <article class="step step--climax" data-scene="4" id="step-4">
+          <div class="step__content">
+            <span class="step__number">Escena 4 / 6 · Clímax</span>
+            <h2 class="step__question">¿Qué ocurre cuando una reserva se hace con mucha antelación?</h2>
+            <p class="step__message">
+              La señal más clara aparece en el <strong>tiempo de anticipación</strong>. Las reservas
+              hechas el mismo día se cancelan en un <strong>6,7 %</strong>; las realizadas con más de
+              un año de antelación alcanzan el <strong>68,0 %</strong>.
+            </p>
+            <p class="step__support">
+              Cuanto más lejos está la fecha de llegada, mayor parece ser la incertidumbre. La
+              reserva temprana no siempre es más segura: también deja más margen para cambiar
+              de planes.
+            </p>
+            <p class="step__takeaway">Tercera capa: la distancia temporal es la señal visual más fuerte.</p>
+          </div>
+        </article>
+
+        <article class="step" data-scene="5" id="step-5">
+          <div class="step__content">
+            <span class="step__number">Escena 5 / 6</span>
+            <h2 class="step__question">¿Hay señales de que una reserva es más firme?</h2>
+            <p class="step__message">
+              Sí. Cuando no hay peticiones especiales, la tasa de cancelación es del
+              <strong>48,3 %</strong>. Con una o más peticiones especiales baja al
+              <strong>22,0 %</strong>.
+            </p>
+            <p class="step__support">
+              No podemos afirmar causalidad, pero el patrón visual es claro: cuando el cliente
+              personaliza su estancia, la reserva parece menos frágil.
+            </p>
+            <p class="step__takeaway">Cuarta capa: la personalización funciona como señal de compromiso.</p>
+          </div>
+        </article>
+      </div>
+
+      <aside class="scrolly__chart" aria-label="Visualización de la escena activa">
+        <div class="chart-card">
+          <div class="chart-card__meta">
+            <span id="chart-kicker">Escena activa</span>
+            <strong id="chart-title">Dimensión visual</strong>
+          </div>
+          <div class="scrolly__chart-inner" id="chart" role="img" aria-live="polite"></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="closing" id="closing">
+      <div class="closing__header">
+        <span class="closing__number">Escena 6 / 6</span>
+        <h2 class="closing__question">¿Qué aprende un hotel si mira las reservas como señales y no solo como números?</h2>
+        <p class="closing__message">
+          La cancelación no aparece como un fenómeno aleatorio. El análisis visual permite
+          identificar señales tempranas de fragilidad y de compromiso.
+        </p>
+      </div>
+
+      <div class="synthesis" aria-label="Síntesis: reserva frágil frente a reserva estable">
+        <div class="synthesis__card synthesis__card--fragile">
+          <p class="synthesis__label">Perfil interpretativo</p>
+          <h3 class="synthesis__title">Reserva más frágil</h3>
+          <div class="synthesis__item"><span class="synthesis__badge">Tiempo</span><span>Mucha antelación</span><strong>68,0 %</strong></div>
+          <div class="synthesis__item"><span class="synthesis__badge">Hotel</span><span>City Hotel</span><strong>42,2 %</strong></div>
+          <div class="synthesis__item"><span class="synthesis__badge">Canal</span><span>Canal TA/TO</span><strong>41,4 %</strong></div>
+          <div class="synthesis__item"><span class="synthesis__badge">Compromiso</span><span>Sin peticiones especiales</span><strong>48,3 %</strong></div>
+        </div>
+
+        <div class="synthesis__card synthesis__card--stable">
+          <p class="synthesis__label">Perfil interpretativo</p>
+          <h3 class="synthesis__title">Reserva más estable</h3>
+          <div class="synthesis__item"><span class="synthesis__badge">Tiempo</span><span>Reserva cercana a llegada</span><strong>6,7 %</strong></div>
+          <div class="synthesis__item"><span class="synthesis__badge">Hotel</span><span>Resort Hotel</span><strong>28,1 %</strong></div>
+          <div class="synthesis__item"><span class="synthesis__badge">Canal</span><span>Canal directo</span><strong>17,8 %</strong></div>
+          <div class="synthesis__item"><span class="synthesis__badge">Compromiso</span><span>Con peticiones especiales</span><strong>22,0 %</strong></div>
+        </div>
+      </div>
+
+      <div class="closing__final">
+        <p>
+          La principal aportación de esta visualización no es predecir una cancelación individual,
+          sino mostrar que las reservas contienen señales interpretables. Para la gestión hotelera,
+          una reserva no debería leerse solo como ocupación futura, sino también como una combinación
+          de riesgo, contexto y compromiso.
+        </p>
+        <p class="closing__caution">
+          Lectura prudente: los gráficos muestran asociaciones visuales, no causalidad directa.
+        </p>
+      </div>
+    </section>
+
+    <section class="method" aria-label="Metodología y fuentes">
+      <div class="method__card">
+        <h2>Metodología breve</h2>
+        <p>
+          El análisis parte del dataset <em>Hotel booking demand datasets</em>, descrito por Antonio,
+          Almeida y Nunes (2019). Se han agregado los datos por dimensiones relevantes para el relato:
+          estado de la reserva, tipo de hotel, canal de distribución, antelación y peticiones especiales.
+        </p>
+        <p>
+          La web se ha construido como una narrativa estática con HTML, CSS, JavaScript, Plotly.js e
+          IntersectionObserver. Se usan datos agregados para que la visualización cargue de forma rápida
+          y sea accesible mediante URL directa.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Visualización de Datos — UOC</p>
+    <p>Dataset: Antonio, Almeida &amp; Nunes (2019). <em>Hotel booking demand datasets.</em></p>
+  </footer>
+
+  <script src="https://cdn.plot.ly/plotly-basic-2.35.2.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
