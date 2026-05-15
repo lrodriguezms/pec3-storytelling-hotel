@@ -1,10 +1,3 @@
-/* ==============================================
-   DATA.JS — Datos agregados verificados
-   Dataset limpio: 117.398 reservas válidas
-   (tras eliminar outliers del dataset original
-   de 119.390 reservas)
-   ============================================== */
-
 var storyData = {
 
   // Escena 1 — El tamaño del problema

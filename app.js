@@ -1,4 +1,3 @@
-/* APP.JS — Scrollytelling ligero con IntersectionObserver + Plotly.js */
 (function () {
   'use strict';
 
