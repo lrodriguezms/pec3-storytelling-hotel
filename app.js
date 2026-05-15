@@ -177,6 +177,8 @@
         y: d.map(function (x) { return x.cancelRate; }),
         type: 'scatter',
         mode: 'lines',
+        name: 'Evolución',
+        showlegend: false,
         line: { color: 'rgba(102,113,125,.38)', width: 5, shape: 'linear' },
         hoverinfo: 'skip'
       },
@@ -189,12 +191,15 @@
         marker: { color: colors, size: 17, line: { color: '#fff', width: 3 } },
         text: d.map(function (x) { return pct(x.cancelRate); }),
         textposition: 'top center',
+        name: 'Tasa de cancelación',
+        showlegend: false,
         textfont: { size: 11, color: C.text },
         hovertemplate: '<b>%{x}</b><br>Reservas: %{customdata[0]}<br>Canceladas: %{customdata[1]}<br>Tasa: %{customdata[2]}<extra></extra>'
       }
     ];
 
     var layout = baseLayout({
+      showlegend: false,
       yaxis: { title: 'Tasa de cancelación', ticksuffix: ' %', range: [0, 80], gridcolor: C.grid, zeroline: false },
       xaxis: { title: 'Antelación de la reserva', tickangle: -25, tickfont: { size: 11 } },
       margin: { t: 66, r: 28, b: 86, l: 68 },
@@ -227,9 +232,10 @@
     var layout = baseLayout({
       yaxis: { title: 'Tasa de cancelación', ticksuffix: ' %', range: [0, 60], gridcolor: C.grid, zeroline: false },
       xaxis: { tickfont: { size: 13 } },
+      margin: { t: 84, r: 28, b: 60, l: 68 },
       annotations: [
         { text: '<b>−26,3 puntos</b> cuando hay al menos una petición especial', xref: 'paper', yref: 'paper',
-          x: 0.5, y: 1.10, showarrow: false, font: { size: 13, color: C.stable } }
+          x: 0.5, y: 1.07, showarrow: false, font: { size: 13, color: C.stable } }
       ]
     });
 
